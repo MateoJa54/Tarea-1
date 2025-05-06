@@ -19,11 +19,22 @@ namespace Tarea_1
 
         private void btnCuadrado_Click(object sender, EventArgs e)
         {
+            Cuadrado.FrmCuadrado frmCuadrado = new Cuadrado.FrmCuadrado();
+            frmCuadrado.Show();
+            this.Hide();
 
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRectangle_Click(object sender, EventArgs e)
+        {
             Rectangle.FrmRectangle frmRectangle = new Rectangle.FrmRectangle();
             frmRectangle.Show();
             this.Hide();
-
         }
     }
 }

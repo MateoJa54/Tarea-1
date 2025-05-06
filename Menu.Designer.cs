@@ -71,6 +71,7 @@
             btnRectangle.TabIndex = 1;
             btnRectangle.Text = "Rectángulo";
             btnRectangle.UseVisualStyleBackColor = false;
+            btnRectangle.Click += btnRectangle_Click;
             // 
             // btnTriangle
             // 
@@ -255,6 +256,7 @@
             Controls.Add(groupBox1);
             Name = "Menu";
             Text = "Menu";
+            Load += Menu_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
