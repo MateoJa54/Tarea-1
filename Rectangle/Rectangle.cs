@@ -73,18 +73,11 @@ namespace Tarea_1.Rectangle
                 txtWidth.Focus();
                 picCanvas.Refresh();
             }
-            //Funcion que grafica un rectangulo.
             public void PlotShape(PictureBox picCanvas)
             {
                 mGraph = picCanvas.CreateGraphics();
                 mPen = new Pen(Color.Blue, 3);
-                //Graficar un rectangulo 
                 mGraph.DrawRectangle(mPen, 0, 0, mWidth * SF, mHeight * SF);
-            }
-            //Funcion que cierra un formulario
-            public void CloseForm(Form ObjForm)
-            {
-                ObjForm.Close();
             }
         }
 }

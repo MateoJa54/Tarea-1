@@ -84,6 +84,7 @@
             btnTriangle.TabIndex = 2;
             btnTriangle.Text = "Triángulo";
             btnTriangle.UseVisualStyleBackColor = false;
+            btnTriangle.Click += btnTriangle_Click;
             // 
             // btnCircle
             // 
@@ -96,6 +97,7 @@
             btnCircle.TabIndex = 3;
             btnCircle.Text = "Círculo";
             btnCircle.UseVisualStyleBackColor = false;
+            btnCircle.Click += btnCircle_Click;
             // 
             // btnEllipse
             // 
@@ -108,6 +110,7 @@
             btnEllipse.TabIndex = 4;
             btnEllipse.Text = "Elipse";
             btnEllipse.UseVisualStyleBackColor = false;
+            btnEllipse.Click += btnEllipse_Click;
             // 
             // btnSemicircle
             // 
@@ -120,6 +123,7 @@
             btnSemicircle.TabIndex = 5;
             btnSemicircle.Text = "Semicírculo";
             btnSemicircle.UseVisualStyleBackColor = false;
+            btnSemicircle.Click += btnSemicircle_Click;
             // 
             // btnTrapeze
             // 
@@ -132,6 +136,7 @@
             btnTrapeze.TabIndex = 6;
             btnTrapeze.Text = "Trapecio";
             btnTrapeze.UseVisualStyleBackColor = false;
+            btnTrapeze.Click += btnTrapeze_Click;
             // 
             // btnTrapezoid
             // 
@@ -144,6 +149,7 @@
             btnTrapezoid.TabIndex = 7;
             btnTrapezoid.Text = "Trapezoide";
             btnTrapezoid.UseVisualStyleBackColor = false;
+            btnTrapezoid.Click += btnTrapezoid_Click;
             // 
             // btnRhombus
             // 
@@ -156,6 +162,7 @@
             btnRhombus.TabIndex = 8;
             btnRhombus.Text = "Rombo";
             btnRhombus.UseVisualStyleBackColor = false;
+            btnRhombus.Click += btnRhombus_Click;
             // 
             // btnRhomboid
             // 
@@ -168,6 +175,7 @@
             btnRhomboid.TabIndex = 9;
             btnRhomboid.Text = "Romboide";
             btnRhomboid.UseVisualStyleBackColor = false;
+            btnRhomboid.Click += btnRhomboid_Click;
             // 
             // btnKite
             // 
@@ -180,6 +188,7 @@
             btnKite.TabIndex = 10;
             btnKite.Text = "Deltoide ";
             btnKite.UseVisualStyleBackColor = false;
+            btnKite.Click += btnKite_Click;
             // 
             // btnStar
             // 
@@ -192,6 +201,7 @@
             btnStar.TabIndex = 11;
             btnStar.Text = "Estrella";
             btnStar.UseVisualStyleBackColor = false;
+            btnStar.Click += btnStar_Click;
             // 
             // label2
             // 

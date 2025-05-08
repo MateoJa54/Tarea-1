@@ -28,16 +28,11 @@ namespace Tarea_1.Rectangle
             objRectangle.InitializeData(txtWidth, txtHeight, txtPerimeter, txtArea, picCanvas);
         }
 
-        private void btnReset_Click(object sender, EventArgs e)
-        {
-            objRectangle.InitializeData(txtWidth, txtHeight, txtPerimeter, txtArea, picCanvas);
-        }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
-            //cierre de un formulario.
-            //Llamada a la funcion CloseForm
-            objRectangle.CloseForm(this);
+            Menu frmMenu = new Menu();
+            frmMenu.Show();
+            this.Hide();
         }
         private void btnCalcular_Click(object sender, EventArgs e)
         {
@@ -48,6 +43,11 @@ namespace Tarea_1.Rectangle
             objRectangle.AreaRectangle();
             objRectangle.PrintData(txtPerimeter, txtArea);
             objRectangle.PlotShape(picCanvas);
+        }
+
+        private void btnClean_Click(object sender, EventArgs e)
+        {
+            objRectangle.InitializeData(txtWidth, txtHeight, txtPerimeter, txtArea, picCanvas);
         }
     }
 }

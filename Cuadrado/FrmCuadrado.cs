@@ -29,16 +29,11 @@ namespace Tarea_1.Cuadrado
 
         }
 
-        private void btnReset_Click(object sender, EventArgs e)
-        {
-            objCuadrado.InitializeData(txtLade, txtPerimeter, txtArea, picCanvas);
-        }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
-            //cierre de un formulario.
-            //Llamada a la funcion CloseForm
-            objCuadrado.CloseForm(this);
+            Menu frmMenu = new Menu();
+            frmMenu.Show();
+            this.Hide();
         }
 
         private void btnCalculate_Click(object sender, EventArgs e)
@@ -49,6 +44,12 @@ namespace Tarea_1.Cuadrado
             objCuadrado.AreaCuadrado();
             objCuadrado.PrintData(txtPerimeter, txtArea);
             objCuadrado.PlotShape(picCanvas);
+        }
+
+        private void btnClean_Click(object sender, EventArgs e)
+        {
+            objCuadrado.InitializeData(txtLade, txtPerimeter, txtArea, picCanvas);
+
         }
     }
 }
